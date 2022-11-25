@@ -26,8 +26,11 @@ header{
 
 }
 .aboutme{
-    border: 2px;
+    border-width: 2px;
     border-color: pink;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -37,7 +40,11 @@ header{
     position: relative;
     border: 5px;
     border-color: black;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
 }
+
 .photo{
     position: absolute;
     inset: o;
