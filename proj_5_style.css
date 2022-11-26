@@ -49,39 +49,49 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 flex-flow: wrap row;
-height: 500px;
 }
 
 
 .text_sect{
   width: 500px;
   max-height:fit-content;
-  z-index: 1;
 }
+
 p{
   line-height: 32px;  
   margin-bottom: 30px
 }
+
+.collapsible {
+  background-color: rgb(240, 79, 79);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: red
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
 .facPhoto{
   vertical-align:middle;
   align-content: right;
-  object-fit: cover;
   padding: 5px;
 }
 
 #FAC{
   text-align: right;
-}
-.circle{
-  height: 100px;
-  width: 100px;
-  background-color: yellow;
-  border-radius: 50%;
-  position: fixed ;
-  Z-index: 0;
-  margin-left: 10px;
-  margin-top: 5px;
-  
 }
 
 /* Slideshow container */
@@ -94,6 +104,8 @@ img {vertical-align: middle;
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
+  position: relative;
+  
 }
 
 /* Next & previous buttons */
