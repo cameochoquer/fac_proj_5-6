@@ -6,13 +6,17 @@ html {
   }
 
 header{
-    color: #36a4c5;
-    font-size: 50px;
+    color: #0080FF;
+    font-size: 25px;
 }
+.name{
+  margin-left: 10px;
+}
+
 .topNav{
     padding-left:16px
     overflow: hidden;
-    background-color: #36a4c5;
+    background-color: #0080FF;
 }
 
 .topNav a {
@@ -25,7 +29,7 @@ header{
     font-weight: 100;
 
 }
-a:link {
+  a:link {
     text-decoration: none;
   }
   a:visited {
@@ -40,29 +44,48 @@ a:link {
 
 /*first section*/
 
-.container1{
-  display: flex;
-  margin-top: 10px;
-  flex-flow: wrap row;
-  justify-content: space-around;
-
+.container{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-flow: wrap row;
+height: 500px;
 }
+
 
 .text_sect{
   width: 500px;
   max-height:fit-content;
-  border: solid;
-  border-color: purple;
-  display: flex;
-  justify-content: space-around;
+  z-index: 1;
+}
+p{
+  line-height: 32px;  
+  margin-bottom: 30px
+}
+.facPhoto{
+  vertical-align:middle;
+  align-content: right;
+  object-fit: cover;
+  padding: 5px;
 }
 
+#FAC{
+  text-align: right;
+}
+.circle{
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: fixed ;
+  Z-index: 0;
+  margin-left: 10px;
+  margin-top: 5px;
+  
+}
 
-
-
-
-
-  *{box-sizing: border-box}
+/* Slideshow container */
+*{box-sizing: border-box}
 body {font-family: futura; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;
@@ -71,10 +94,6 @@ img {vertical-align: middle;
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
-  position: relative;
-  margin: auto;
-  border: solid;
-  border-color: red;
 }
 
 /* Next & previous buttons */
