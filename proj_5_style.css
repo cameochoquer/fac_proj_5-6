@@ -6,7 +6,7 @@ html {
   }
 
 header{
-    color: blue;
+    color: #0000ff;
     font-size: 25px;
 }
 .name{
@@ -16,7 +16,7 @@ header{
 .topNav{
     padding-left:16px
     overflow: hidden;
-    background-color: blue;
+    background-color: #0000ff;
 }
 
 .topNav a {
