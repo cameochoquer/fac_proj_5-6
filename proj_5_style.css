@@ -16,7 +16,7 @@ header{
 .topNav{
     padding-left:16px
     overflow: hidden;
-    background-color: #0080FF;
+    background-color: blue;
 }
 
 .topNav a {
